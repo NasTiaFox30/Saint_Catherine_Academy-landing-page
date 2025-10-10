@@ -11,48 +11,35 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: var(--section-text);
+    background-color: var(--bg-color);
 }
 
-/* :root {
-    --bg-color: rgba(248, 248, 248);
-    --bg-picture: rgba(93, 108, 107, 0.587);
-    --btn-color: rgba(152, 152, 152, 0.966);
-
-    --icon-color: #181818;
-
-    --section-color: rgb(168, 168, 168);
-    --section-name-color: #2b2b2b;
-    --section-text: #6b7280;
-    --section-text-invers: #d1d5db;
-    --gradient: linear-gradient(135deg, var(--section-color) 0%, #7d7d7d 100%);
-
-    --header-color: rgb(100, 100, 100, 800);
-    --footer-color: rgb(100, 100, 100);
-} */
 :root {
-    --primary-blue: #4c89b4;
-    --secondary-green: #4D9A4C;
-    --light-blue: #72AEE0;
-    --accent-yellow: #FFC300;
+    --primary-dark-blue: #002D62;
+    --secondary-gold: #FFD700;
+    --accent-light-blue: #326288;
+    --light-gray: #F5F5F5;
 
-    --bg-color: #F8F8F8;
-    --bg-picture: rgba(55, 110, 149, 0.7);
+    --bg-color: var(--light-gray);
+    --bg-picture: rgba(0, 46, 98, 0.233);
 
-    --btn-color: var(--light-blue);
-    --btn-text-color: #181818;
+    --btn-color: var(--secondary-gold);
+    --btn-text-color: var(--primary-dark-blue);
 
-    --icon-color: var(--primary-blue);
+    --icon-color: var(--primary-dark-blue);
 
-    --section-name-color: #2b2b2b;
-    --section-text: #5A5A5A;
-    --section-text-invers: #D1D5DB;
+    --section-name-color: var(--primary-dark-blue);
+    --section-text: #333;
+    --section-text-invers: #E0E0E0;
 
-    --section-color: var(--primary-blue);
-    --gradient: linear-gradient(135deg, var(--primary-blue) 0%, #204C70 100%);
+    --section-color: var(--primary-dark-blue);
+    --gradient: linear-gradient(135deg, var(--primary-dark-blue) 0%, #001A36 100%);
 
-    --header-color: #326188e9;
-    --footer-color: #326288;
+    --header-color: rgba(0, 45, 98, 0.95);
+    --footer-color: #001A36;
+
+    --header-menu-color: rgb(45, 86, 120) 45, 98, 0.95;
 }
 
 .section {
@@ -71,7 +58,7 @@ body {
     padding: 12px 30px;
     font-weight: 600;
     border-radius: 30px;
-    color: white;
+    color: var(--btn-text-color);
     text-decoration: none;
     display: inline-block;
     transition: all 0.3s ease;
@@ -79,7 +66,7 @@ body {
 }
 
 .btn-primary:hover {
-    background: #4e4e4e;
+    background: color-mix(in srgb, var(--btn-color) 80%, black);
     transform: translateY(-2px);
 }
 
