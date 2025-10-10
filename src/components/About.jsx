@@ -6,7 +6,7 @@ const About = () => {
       <div className="container">
         <div className="about-content">
           <div className="about-image">
-            <img src={mainphoto} alt="College" />
+            <iframe width="560" height="400" src="https://www.youtube.com/embed/549GzvKwPWw?si=GGtg1IA3Q1tGLfaX&amp;controls=0" title="Saint Catherine Academy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
           <div className="about-text">
             <h2>About King's College</h2>
