@@ -43,7 +43,7 @@ const Header = () => {
     <>
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container">
-          <div className="nav-brand">King's College
+          <div className="nav-brand">Saint Catherine Academy
             <img className='logo-header' src={logo} alt="" />
           </div>
           
