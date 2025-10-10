@@ -10,23 +10,23 @@ const HeroSlider = () => {
   const slides = [
     {
       image: photoslider1,
-      title: "FUTURE LEADERS FOR THE WORLD",
-      subtitle: "Empowering excellence in academics and character since 1967.",
-      buttonText: 'Discover',
+      title: "VIRTUE AND KNOWLEDGE",
+      subtitle: "Empowering young women to lead and serve since 1883.",
+      buttonText: 'Discover Our Heritage',
       buttonLink: '#about'
     },
     {
       image: photoslider2,
-      title: 'VIBRANT COLLEGE LIFE',
-      subtitle: 'A nurturing environment on the Old Northern Highway for growth and success.',
-      buttonText: 'Explore Student Life',
+      title: 'A LEGACY OF MERCY',
+      subtitle: 'A vibrant community committed to holistic development in Belize City.',
+      buttonText: 'Explore Campus Life',
       buttonLink: '#gallery'
     },
     {
       image: photoslider3,
-      title: 'ACADEMIC EXCELLENCE STARTS HERE',
-      subtitle: 'Unlock your potential with our comprehensive curriculum and dedicated staff.',
-      buttonText: 'Apply Today',
+      title: 'THE PATH TO ACADEMIC EXCELLENCE',
+      subtitle: 'Rigorous curriculum, dedicated staff, and a future of limitless potential.',
+      buttonText: 'Enroll Now',
       buttonLink: '#contact'
     }
   ];
