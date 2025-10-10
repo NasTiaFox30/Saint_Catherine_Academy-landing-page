@@ -71,6 +71,10 @@
     width: 100%;
 }
 
+.nav-links.active {
+    background: var(--header-menu-color);
+}
+
 .mobile-menu-btn {
     display: none;
     flex-direction: column;
