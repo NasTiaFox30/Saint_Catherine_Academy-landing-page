@@ -14,9 +14,9 @@ export default function App() {
       <Header />
       <HeroSlider />
       <About />
-      <Statistics />
-      <GoogleMaps/>
+      <Statistics />      
       <Gallery />
+      <GoogleMaps/>
       <Contact />
       <Newsletter />
       <Footer />
