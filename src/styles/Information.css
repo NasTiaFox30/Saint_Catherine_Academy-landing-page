@@ -1,0 +1,37 @@
+.contact-info {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 15px;
+    height: fit-content;
+}
+
+.contact-info h4 {
+    color: var(--section-name-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.contact-item i {
+    color: var(--icon-color);
+    font-size: 1.2rem;
+    width: 30px;
+    margin-right: 1rem;
+    margin-top: 0.2rem;
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-info {
+        padding: 1.5rem;
+    }
+}

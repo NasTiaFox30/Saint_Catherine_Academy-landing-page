@@ -1,0 +1,9 @@
+.map-section {
+    margin-top: 3rem;
+    padding: 0;
+}
+
+.map-container {
+    position: relative;
+    height: 500px;
+}

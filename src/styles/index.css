@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* :root {
+    --bg-color: rgba(248, 248, 248);
+    --bg-picture: rgba(93, 108, 107, 0.587);
+    --btn-color: rgba(152, 152, 152, 0.966);
+
+    --icon-color: #181818;
+
+    --section-color: rgb(168, 168, 168);
+    --section-name-color: #2b2b2b;
+    --section-text: #6b7280;
+    --section-text-invers: #d1d5db;
+    --gradient: linear-gradient(135deg, var(--section-color) 0%, #7d7d7d 100%);
+
+    --header-color: rgb(100, 100, 100, 800);
+    --footer-color: rgb(100, 100, 100);
+} */
+:root {
+    --primary-blue: #4c89b4;
+    --secondary-green: #4D9A4C;
+    --light-blue: #72AEE0;
+    --accent-yellow: #FFC300;
+
+    --bg-color: #F8F8F8;
+    --bg-picture: rgba(55, 110, 149, 0.7);
+
+    --btn-color: var(--light-blue);
+    --btn-text-color: #181818;
+
+    --icon-color: var(--primary-blue);
+
+    --section-name-color: #2b2b2b;
+    --section-text: #5A5A5A;
+    --section-text-invers: #D1D5DB;
+
+    --section-color: var(--primary-blue);
+    --gradient: linear-gradient(135deg, var(--primary-blue) 0%, #204C70 100%);
+
+    --header-color: #326188e9;
+    --footer-color: #326288;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn-primary {
+    background: var(--btn-color);
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #4e4e4e;
+    transform: translateY(-2px);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--section-name-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--section-text);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+}
