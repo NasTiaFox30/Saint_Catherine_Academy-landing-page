@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.about-image img {
+.about-image iframe {
   width: 100%;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -36,5 +36,9 @@
 
   .about-text h2 {
     font-size: 2rem;
+  }
+
+  .about-image iframe {
+    height: 300px;
   }
 }
