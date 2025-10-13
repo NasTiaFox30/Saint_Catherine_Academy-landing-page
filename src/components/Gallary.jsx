@@ -1,45 +1,24 @@
 import { useState } from 'react'
 import '../styles/Gallary.css'
-import photo1 from '../assets/images/example1.jpg'
-import photo2 from '../assets/images/example2.jpg'
-import photo3 from '../assets/images/example3.jpg'
-import photo4 from '../assets/images/example4.jpg'
-import photo5 from '../assets/images/example5.jpg'
-import photo6 from '../assets/images/example6.jpg'
-import photo7 from '../assets/images/example7.jpg'
-import photo8 from '../assets/images/example8.jpg'
-import photo9 from '../assets/images/example9.jpg'
-import photo10 from '../assets/images/example10.jpg'
-import photo11 from '../assets/images/example11.jpg'
-import photo12 from '../assets/images/example12.jpg'
-import photo13 from '../assets/images/example13.jpg'
-import photo14 from '../assets/images/example14.jpg'
-import photo15 from '../assets/images/example15.jpg'
-import photo16 from '../assets/images/example16.jpg'
-import photo17 from '../assets/images/example17.jpg'
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null)
 
-  const galleryItems = [
-    { src: photo1, caption: '' },
-    { src: photo2, caption: '' },
-    { src: photo3, caption: '' },
-    { src: photo4, caption: '' },
-    { src: photo5, caption: '' },
-    { src: photo6, caption: 'Shildren day 2023' },
-    { src: photo7, caption: '' },
-    { src: photo8, caption: '' },
-    { src: photo9, caption: '' },
-    { src: photo10, caption: '' },
-    { src: photo11, caption: '' },
-    { src: photo12, caption: '' },
-    { src: photo13, caption: '' },
-    { src: photo14, caption: '' },
-    { src: photo15, caption: '' },
-    { src: photo16, caption: '' },
-    { src: photo17, caption: '' },
-  ]
+  const images = import.meta.glob('../assets/images/photos/**.{jpg,jpeg,png}', { eager: true });
+
+  const galleryItems = Object.values(images).map((image, index) => ({
+    src: image.default,
+    caption: getCaptionByIndex(index)
+  }));
+
+  function getCaptionByIndex(index) {
+    const captions = {
+      0: 'Example text',
+      1: 'Example text',
+      2: 'Example text',
+    };
+    return captions[index] || '';
+  }
 
   return (
     <section id="gallery" className="gallery-section section">
@@ -53,7 +32,7 @@ const Gallery = () => {
               className="gallery-item"
               onClick={() => setSelectedImage(item)}
             >
-              <img src={item.src} alt={item.caption} />
+              <img src={item.src} alt={item.caption || `Gallery image ${index + 1}`} />
               <div className="gallery-overlay">
                 <i className="fas fa-expand"></i>
               </div>
@@ -69,7 +48,7 @@ const Gallery = () => {
               &times;
             </button>
             <img src={selectedImage.src} alt={selectedImage.caption} />
-            <p>{selectedImage.caption}</p>
+            {selectedImage.caption && <p>{selectedImage.caption}</p>}
           </div>
         </div>
       )}
