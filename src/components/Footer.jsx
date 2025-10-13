@@ -15,8 +15,9 @@ const Footer = () => {
                 King's College is dedicated to cultivating well-rounded, ethical leaders. <br />
                 Join our supportive community and achieve excellence.</p>
               <div className="social-links">
-                <a href="https://www.facebook.com/kings.belize/"><i><FaFacebook/></i></a>
-                <a href="https://www.youtube.com/@kingscollegebelize2093"><i><FaYoutube /></i></a>
+                <a href="https://www.facebook.com/SCAHighSchoolBelize"><i><FaFacebook /></i></a>
+                <a href="https://www.instagram.com/explore/locations/941837997/saint-catherine-academy/"><i><FaInstagram /></i></a>
+                <a href="https://www.youtube.com/@saintcatherineacademybelize"><i><FaYoutube /></i></a>
               </div>
             </div>
 
