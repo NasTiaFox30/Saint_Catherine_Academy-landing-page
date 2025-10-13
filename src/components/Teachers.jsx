@@ -76,7 +76,7 @@ const Teachers = () => {
       delay: 4000,
       disableOnInteraction: false,
     },
-    navigation: true,
+    navigation: isMobile ? false : true,
     pagination: {
       clickable: true,
       dynamicBullets: true
