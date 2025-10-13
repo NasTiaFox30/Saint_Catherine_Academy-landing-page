@@ -13,13 +13,16 @@ const Gallery = () => {
     caption: getCaptionByIndex(index)
   }));
 
+  const visibleItems = showAll ? galleryItems : galleryItems.slice(0, MAX_VISIBLE_ITEMS);
+  const hasMore = galleryItems.length > MAX_VISIBLE_ITEMS;
+
   function getCaptionByIndex(index) {
     const captions = {
       0: 'Example text',
       1: 'Example text',
       2: 'Example text',
     };
-    return captions[index] || '';
+    return captions[index] || `Gallery image ${index + 1}`;
   }
 
   return (
@@ -28,7 +31,7 @@ const Gallery = () => {
         <h2 className="section-title">College Gallery</h2>
         <p className="section-subtitle">Take a look at our events and vibrant learning environment</p>
         <div className="gallery-grid">
-          {galleryItems.map((item, index) => (
+          {visibleItems.map((item, index) => (
             <div 
               key={index} 
               className="gallery-item"
@@ -41,6 +44,17 @@ const Gallery = () => {
             </div>
           ))}
         </div>
+
+        {hasMore && (
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
+            <button 
+              className="btn btn-primary" 
+              onClick={() => setShowAll(!showAll)}
+            >
+              {showAll ? 'Hide' : `More photos (${galleryItems.length - MAX_VISIBLE_ITEMS})`}
+            </button>
+          </div>
+        )}
       </div>
 
       {selectedImage && (
