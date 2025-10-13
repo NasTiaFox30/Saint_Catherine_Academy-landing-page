@@ -10,10 +10,10 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div>
-              <h5>King's College</h5>
-              <p>Rooted in Belizean pride on the Old Northern Highway since 1967, <br />
-                King's College is dedicated to cultivating well-rounded, ethical leaders. <br />
-                Join our supportive community and achieve excellence.</p>
+              <h5>Saint Catherine Academy</h5>
+              <p>Rooted in the <b>Mercy tradition</b> since <b>1883</b>, <br />
+                St. Catherine Academy is dedicated to empowering young women with <b>Virtue and Knowledge</b>.<br />
+                Join our sisterhood and become <b>leader in service</b>.</p>
               <div className="social-links">
                 <a href="https://www.facebook.com/SCAHighSchoolBelize"><i><FaFacebook /></i></a>
                 <a href="https://www.instagram.com/explore/locations/941837997/saint-catherine-academy/"><i><FaInstagram /></i></a>
@@ -31,7 +31,7 @@ const Footer = () => {
         
         <div className="footer-bottom">
           <div className="footer-copyright">
-            <p>King's College - Belize</p>
+            <p>Saint Catherine Academy (SCA) - Belize</p>
             <p id="info_firm">&copy; 2025 Stworzone przez GLP</p>
             {/* Creator: Anastasiia Bzova 2025 */}
           </div>
