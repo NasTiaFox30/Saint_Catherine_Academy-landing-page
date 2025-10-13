@@ -10,6 +10,13 @@ import photo7 from '../assets/images/example7.jpg'
 import photo8 from '../assets/images/example8.jpg'
 import photo9 from '../assets/images/example9.jpg'
 import photo10 from '../assets/images/example10.jpg'
+import photo11 from '../assets/images/example11.jpg'
+import photo12 from '../assets/images/example12.jpg'
+import photo13 from '../assets/images/example13.jpg'
+import photo14 from '../assets/images/example14.jpg'
+import photo15 from '../assets/images/example15.jpg'
+import photo16 from '../assets/images/example16.jpg'
+import photo17 from '../assets/images/example17.jpg'
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null)
