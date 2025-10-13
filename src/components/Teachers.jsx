@@ -7,6 +7,10 @@ import 'swiper/css/pagination'
 import 'swiper/css/effect-coverflow'
 import '../styles/Teachers.css'
 
+import teacher1 from "../assets/images/teacher1.jpg"
+import teacher2 from "../assets/images/teacher2.jpg"
+import teacher3 from "../assets/images/teacher3.jpg"
+
 const Teachers = () => {
   const [isMobile, setIsMobile] = useState(false)
 
