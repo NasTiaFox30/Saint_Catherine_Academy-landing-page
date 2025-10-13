@@ -146,16 +146,6 @@ const Teachers = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          
-          {/* Custom navigation buttons */}
-          <div className="slider-controls">
-            <button className="slider-nav-btn prev" aria-label="Previous teachers">
-              <i className="fas fa-chevron-left"></i>
-            </button>
-            <button className="slider-nav-btn next" aria-label="Next teachers">
-              <i className="fas fa-chevron-right"></i>
-            </button>
-          </div>
         </div>
       </div>
     </section>
