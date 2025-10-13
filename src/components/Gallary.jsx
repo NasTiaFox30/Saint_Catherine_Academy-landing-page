@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import '../styles/Gallary.css'
+const MAX_VISIBLE_ITEMS = 10;
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null)
