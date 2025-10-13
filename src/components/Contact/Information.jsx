@@ -16,8 +16,8 @@ const Information = () => {
             <i><FaPhoneAlt /></i>
             <div>
             <strong>Phone:</strong><br />
-                Main: +5016243183<br/>
-                Addition: +223-4908 223-1758<br />
+                Main:  +501-223-4908 | +501-223-1758<br />
+                Convent: +501-227-7477<br />
             </div>
         </div>
         <div className="contact-item">
