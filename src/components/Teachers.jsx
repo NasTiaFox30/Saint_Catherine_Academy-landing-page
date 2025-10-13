@@ -81,7 +81,6 @@ const Teachers = () => {
       clickable: true,
       dynamicBullets: true
     },
-    effect: isMobile ? 'slide' : 'coverflow',
     coverflowEffect: {
       rotate: 0,
       stretch: 0,
