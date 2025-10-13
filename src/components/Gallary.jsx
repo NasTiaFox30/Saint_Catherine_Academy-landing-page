@@ -32,6 +32,13 @@ const Gallery = () => {
     { src: photo8, caption: '' },
     { src: photo9, caption: '' },
     { src: photo10, caption: '' },
+    { src: photo11, caption: '' },
+    { src: photo12, caption: '' },
+    { src: photo13, caption: '' },
+    { src: photo14, caption: '' },
+    { src: photo15, caption: '' },
+    { src: photo16, caption: '' },
+    { src: photo17, caption: '' },
   ]
 
   return (
