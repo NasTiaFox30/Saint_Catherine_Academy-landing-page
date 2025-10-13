@@ -9,7 +9,7 @@ const Information = () => {
             <i><FaMapMarkerAlt /></i>
             <div>
             <strong>Address:</strong><br />
-                31.5 miles Old Northern Highway. P. O.Box 290, Belize City
+                6 Hutson Street, Belize City
             </div>
         </div>
         <div className="contact-item">
@@ -17,14 +17,14 @@ const Information = () => {
             <div>
             <strong>Phone:</strong><br />
                 Main: +5016243183<br/>
-                Addition: +232-7501 622-8181<br />
+                Addition: +223-4908 223-1758<br />
             </div>
         </div>
         <div className="contact-item">
             <i><FaMailBulk /></i>
             <div>
             <strong>Email:</strong><br />
-                kingscollegebz@gmail.com
+                stillett@sca.edu.bz
             </div>
         </div>
         <div className="contact-item">
@@ -32,7 +32,8 @@ const Information = () => {
             <div>
             <strong>Busssines Hours:</strong><br />
                 Mon-Fri: 8:00 AM - 6:00 PM<br />
-                Saturday: 9:00 AM - 3:00 PM
+                  Saturday: 9:00 AM - 3:00 PM <br />
+                  ...
             </div>
         </div>
     </div>
