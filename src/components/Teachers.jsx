@@ -48,9 +48,9 @@ const Teachers = () => {
 
   const swiperParams = {
     modules: [Navigation, Pagination, Autoplay, EffectCoverflow],
-    spaceBetween: 30,
+    spaceBetween: 50,
     slidesPerView: isMobile ? 1 : 3,
-    centeredSlides: true,
+    centeredSlides: false,
     loop: true,
     autoplay: {
       delay: 4000,
