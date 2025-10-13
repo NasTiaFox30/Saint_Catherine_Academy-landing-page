@@ -4,6 +4,7 @@ const MAX_VISIBLE_ITEMS = 10;
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null)
+  const [showAll, setShowAll] = useState(false); 
 
   const images = import.meta.glob('../assets/images/photos/**.{jpg,jpeg,png}', { eager: true });
 
