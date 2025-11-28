@@ -1,4 +1,4 @@
-# King's College (landing page)
+# Saint Catherine Academy (landing page)
 React + Vite + Bootstrap Css
 
 ## Hours
